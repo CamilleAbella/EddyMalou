@@ -10,16 +10,21 @@ module.exports = class Eddy{
 		this._name;
 		this._owner;
 		this._lexic;
-		this.load(data)
+		this.data = data
 		EddyArray.push(this)
 	}
 
 
 	set data(data={}){
 		this.ector = new Ector()
-		this.name(data.name||"Eddy Malou")
-		this.owner(data.owner||"Maître")
-		this.lexic(Array.isArray(data.lexic)?data.lexic||[])
+		this.name = data.name || "Eddy Malou"
+		this.owner = data.owner || "Maître"
+		if(Array.isArray(data.lexic)){
+			this.lexic = data.lexic || ["Hello world"]
+		}else{
+			this.lexic = ["Hello world"]
+		}
+		if(this.lexic.length===0) this.input = "Hello world";
 		return this
 	}
 	get data(){
@@ -71,30 +76,30 @@ module.exports = class Eddy{
 
 
 	remove(text){
-		this.lexic(this._lexic.filter(entry=>{
+		this.lexic = this._lexic.filter(entry=>{
 			return entry.toLowerCase() !== text.toLowerCase()
-		}))
+		})
+		if(this.lexic.length===0) this.input = "Hello world";
 		return this
 	}
 	removeAll(text){
-		this.lexic(this._lexic.filter(entry=>{
+		this.lexic = this._lexic.filter(entry=>{
 			return !entry.toLowerCase().includes(text.toLowerCase())
-		}))
+		})
+		if(this.lexic.length===0) this.input = "Hello world";
 		return this
 	}
 	reset(){
-		this.lexic([])
+		this.lexic = ["Hello world"]
 		return this
 	}
 	fusion(eddy){
-		this.lexic(
-			this._lexic.concat(
-				eddy.lexic.filter(entry=>{
-					return this._lexic.every(entry2=>{
-						return entry2.toLowerCase() !== entry.toLowerCase()
-					})
+		this.lexic = this._lexic.concat(
+			eddy.lexic.filter(entry=>{
+				return this._lexic.every(entry2=>{
+					return entry2.toLowerCase() !== entry.toLowerCase()
 				})
-			)
+			})
 		)
 		return this
 	}

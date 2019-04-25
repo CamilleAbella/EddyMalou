@@ -1,6 +1,6 @@
 {
   "name": "eddymalou-chatbot",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Ector-based ChatBot machine learning AI",
   "main": "index.js",
   "dependencies": {
@@ -23,5 +23,13 @@
     "IA"
   ],
   "author": "ghom",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilleAbella/EddyMalou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CamilleAbella/EddyMalou/issues"
+  },
+  "homepage": "https://github.com/CamilleAbella/EddyMalou#readme"
 }

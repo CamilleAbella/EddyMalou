@@ -38,11 +38,11 @@ const chatBot = new Eddy({
 
 ### Setters
 
-- set **data**( *data* ) *like the constructor*
-- set **name**( *name* ) *set the name of chatBot*
-- set **owner**( *owner* ) *set the owner name of chatBot*
-- set **lexic**( *lexic* ) *set the lexicon of chatBot*
-- set **input**( *entry* ) *add entry to lexicon of chatBot*
+- set **data** = *data* / *like the constructor*
+- set **name** = *name* / *set the name of chatBot*
+- set **owner** = *owner* / *set the owner name of chatBot*
+- set **lexic** = *lexic* / *set the lexicon of chatBot*
+- set **input** = *entry* / *add entry to lexicon of chatBot*
 
 ### Getters
 
@@ -61,9 +61,9 @@ const chatBot = new Eddy({
 
 ### Externs
 
-- get **quote** *get a Eddy Malou random sentence*
-- get **all** *get an Array of all Eddy instances*
-- get **ector** *get Ector class*
+- static get **quote** *get a Eddy Malou random sentence*
+- static get **all** *get an Array of all Eddy instances*
+- static get **ector** *get Ector class*
 
 # Enjoy
 
