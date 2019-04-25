@@ -27,7 +27,7 @@ const chatBot = new Eddy({
 	owner : "Ghom",
 
 	// Pre-configured lexicon (optional)
-	lexique : [
+	lexic : [
 		"Hello world !",
 		"How are you ?"
 	]
