@@ -1,0 +1,27 @@
+{
+  "name": "eddymalou-chatbot",
+  "version": "1.0.1",
+  "description": "Ector-based ChatBot machine learning AI",
+  "main": "index.js",
+  "dependencies": {
+    "ector": "^1.0.1",
+    "eddy-malou": "^999.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "machine-learning",
+    "tensorflow",
+    "eddy",
+    "malou",
+    "eddy-malou",
+    "chatbot",
+    "responsive",
+    "AI",
+    "IA"
+  ],
+  "author": "ghom",
+  "license": "ISC"
+}
